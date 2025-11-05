@@ -1,0 +1,29 @@
+<!doctype html>
+<html lang="uz">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>Jamoa — Mars IT School</title>
+  <style>
+    body{font-family:'Segoe UI',sans-serif;background:#0f1724;color:#e6eef8;padding:30px}
+    .nav a{text-decoration:none;color:#9aa4b2;margin-right:10px}
+    .nav a:hover{color:white}
+    .member{background:#0b1220;padding:16px;border-radius:10px;margin-top:10px}
+  </style>
+</head>
+<body>
+  <h1>Bizning jamoa</h1>
+  <div class="nav">
+      <a href="{% url 'index' %}">Bosh sahifa</a>
+      <a href="{% url 'about' %}">Haqida</a>
+      <a href="{% url 'cources' %}">Kurslar</a>
+      <a href="{% url 'team' %}">Jamoa</a>
+      <a href="{% url 'contact' %}">Aloqa</a>
+  </div>
+
+  <div class="member"><b>Ali Karimov</b> — Frontend mentor (React / Vue)</div>
+  <div class="member"><b>Malika Tursunova</b> — Backend mentor (Django)</div>
+  <div class="member"><b>Jamshid Raximov</b> — Telegram bot dasturchi</div>
+  <div class="member"><b>Aziza Rustamova</b> — UI/UX dizayner</div>
+</body>
+</html>

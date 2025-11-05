@@ -1,0 +1,29 @@
+<!doctype html>
+<html lang="uz">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>Kurslar — Mars IT School</title>
+  <style>
+    body{font-family:'Segoe UI',sans-serif;background:#0f1724;color:#e6eef8;padding:30px}
+    .nav a{text-decoration:none;color:#9aa4b2;margin-right:10px}
+    .nav a:hover{color:white}
+    .card{background:#0b1220;padding:20px;border-radius:12px;margin-top:16px}
+  </style>
+</head>
+<body>
+  <h1>Mars IT School — Kurslar</h1>
+  <div class="nav">
+    <a href="{% url 'index' %}">Bosh sahifa</a>
+    <a href="{% url 'about' %}">Haqida</a>
+    <a href="{% url 'cources' %}">Kurslar</a>
+    <a href="{% url 'team' %}">Jamoa</a>
+    <a href="{% url 'contact' %}">Aloqa</a>
+  </div>
+
+  <div class="card"><h3>Frontend Bootcamp</h3><p>HTML, CSS, JavaScript, React va real loyihalar.</p></div>
+  <div class="card"><h3>Backend Developer</h3><p>Python, Django, REST API va ma’lumotlar bazasi.</p></div>
+  <div class="card"><h3>Telegram Botlar</h3><p>Aiogram yordamida professional botlar yaratish.</p></div>
+  <div class="card"><h3>UI/UX Dizayn</h3><p>Figma, interfeys dizayni va foydalanuvchi tajribasi.</p></div>
+</body>
+</html>

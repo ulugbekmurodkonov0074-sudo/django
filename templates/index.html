@@ -1,0 +1,91 @@
+<!doctype html>
+<html lang="uz">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>Mars IT School — Toshkent</title>
+  <style>
+    :root{
+      --bg:#0f1724; --card:#0b1220; --accent1:#ff6b6b; --accent2:#7c5cff;
+      --muted:#9aa4b2; --glass:rgba(255,255,255,0.04); --radius:14px;
+      font-family: 'Segoe UI', Inter, sans-serif;
+    }
+    *{margin:0;padding:0;box-sizing:border-box}
+    body{background:var(--bg);color:#e6eef8;line-height:1.5;padding:30px}
+    a{text-decoration:none;color:inherit}
+    .header{display:flex;justify-content:space-between;align-items:center;margin-bottom:30px}
+    .logo{background:linear-gradient(135deg,var(--accent2),var(--accent1));
+      width:50px;height:50px;border-radius:12px;display:flex;align-items:center;justify-content:center;
+      font-weight:700;box-shadow:0 8px 20px rgba(124,92,255,0.3)}
+    .site-title{font-size:20px;font-weight:700}
+    .site-sub{font-size:12px;color:var(--muted)}
+    .nav a{margin:0 8px;padding:8px 10px;border-radius:8px;color:var(--muted);transition:.2s}
+    .nav a:hover{background:var(--glass);color:white}
+    .hero{display:flex;flex-wrap:wrap;gap:20px;align-items:center;margin-top:20px}
+    .hero-left{flex:1;min-width:260px}
+    .hero-right{background:var(--card);padding:18px;border-radius:12px;min-width:250px}
+    .btn{background:linear-gradient(90deg,var(--accent2),var(--accent1));padding:10px 16px;border:none;
+      border-radius:10px;color:white;font-weight:700;margin-right:10px}
+    .btn.ghost{background:transparent;border:1px solid var(--muted);color:var(--muted)}
+    .grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:14px;margin-top:20px}
+    .card{background:var(--card);padding:16px;border-radius:10px;border:1px solid rgba(255,255,255,0.03)}
+    .footer{margin-top:40px;text-align:center;color:var(--muted);font-size:14px}
+  </style>
+</head>
+<body>
+  <header class="header">
+    <div style="display:flex;align-items:center;gap:10px">
+      <div class="logo">M</div>
+      <div>
+        <div class="site-title">Mars IT School</div>
+        <div class="site-sub">Toshkent — Frontend, Backend, Botlar</div>
+      </div>
+    </div>
+    <nav class="nav">
+      <a href="{% url 'index' %}">Bosh sahifa</a>
+      <a href="{% url 'about' %}">Haqida</a>
+      <a href="{% url 'cources' %}">Kurslar</a>
+      <a href="{% url 'team' %}">Jamoa</a>
+      <a href="{% url 'contact' %}">Aloqa</a>
+    </nav>
+  </header>
+
+  <section class="hero">
+    <div class="hero-left">
+      <h1 style="font-size:26px;margin-bottom:10px">Mars IT — Toshkentda ITni o‘rgatamiz!</h1>
+      <p style="color:var(--muted)">Frontend, Backend, Telegram botlar, UI/UX va real loyiha asosida amaliy kurslar.</p>
+      <div style="margin-top:18px">
+        <a class="btn" href="{% url 'cources' %}">Kurslarga yozilish</a>
+        <a class="btn ghost" href="{% url 'contact' %}">Savol berish</a>
+      </div>
+
+      <div class="grid">
+        <div class="card">
+          <b>Frontend Bootcamp</b><br>
+          HTML, CSS, JS, React — real loyihalar bilan.
+        </div>
+        <div class="card">
+          <b>Backend & API</b><br>
+          Python + Django, ma’lumotlar bazasi, server.
+        </div>
+        <div class="card">
+          <b>Telegram Botlar</b><br>
+          Aiogram orqali professional botlar yaratish.
+        </div>
+      </div>
+    </div>
+
+    <div class="hero-right">
+      <h3>Keyingi guruh: 1-sentabr, 2025</h3>
+      <p style="color:var(--muted)">O‘rta narx: 1,200,000 so‘m / oy</p>
+      <ul style="margin-top:10px;color:var(--muted)">
+        <li>Amaliy loyiha — portfolio</li>
+        <li>Intervyu tayyorgarligi</li>
+        <li>Mentorlik dasturi</li>
+      </ul>
+    </div>
+  </section>
+
+  <footer class="footer">© 2025 Mars IT School, Toshkent</footer>
+</body>
+</html>

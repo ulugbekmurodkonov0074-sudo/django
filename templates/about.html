@@ -1,0 +1,38 @@
+<!doctype html>
+<html lang="uz">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>Haqida — Mars IT School</title>
+  <style>
+    body{font-family:'Segoe UI',sans-serif;background:#0f1724;color:#e6eef8;padding:30px}
+    a{text-decoration:none;color:#9aa4b2;margin-right:10px}
+    a:hover{color:white}
+    .card{background:#0b1220;padding:20px;border-radius:12px;margin-top:20px}
+  </style>
+</head>
+<body>
+  <h1>Mars IT School haqida</h1>
+  <nav>
+      <a href="{% url 'index' %}">Bosh sahifa</a>
+      <a href="{% url 'about' %}">Haqida</a>
+      <a href="{% url 'cources' %}">Kurslar</a>
+      <a href="{% url 'team' %}">Jamoa</a>
+      <a href="{% url 'contact' %}">Aloqa</a>
+  </nav>
+
+  <div class="card">
+    <h2>Biz kimmiz?</h2>
+    <p>Mars IT School — Toshkentda joylashgan amaliy IT o‘quv markazi. Bizning maqsad: yoshlarni real loyihalar asosida IT sohasiga tayyorlash.</p>
+  </div>
+
+  <div class="card">
+    <h2>Afzalliklar</h2>
+    <ul>
+      <li>Kichik guruhlar bilan o‘qitish</li>
+      <li>Har bir kursda amaliy loyiha</li>
+      <li>Mentorlik va ishga yo‘naltirish</li>
+    </ul>
+  </div>
+</body>
+</html>

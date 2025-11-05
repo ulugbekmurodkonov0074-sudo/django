@@ -1,0 +1,39 @@
+<!doctype html>
+<html lang="uz">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>Aloqa — Mars IT School</title>
+  <style>
+    body{font-family:'Segoe UI',sans-serif;background:#0f1724;color:#e6eef8;padding:30px}
+    .nav a{text-decoration:none;color:#9aa4b2;margin-right:10px}
+    .nav a:hover{color:white}
+    form{background:#0b1220;padding:20px;border-radius:12px;margin-top:20px;max-width:400px}
+    input,textarea{width:100%;padding:10px;margin-top:10px;border:none;border-radius:8px;background:#10182b;color:white}
+    button{margin-top:12px;padding:10px 16px;border:none;border-radius:10px;
+      background:linear-gradient(90deg,#7c5cff,#ff6b6b);color:white;font-weight:700;cursor:pointer}
+  </style>
+</head>
+<body>
+  <h1>Aloqa</h1>
+  <div class="nav">
+    <a href="{% url 'index' %}">Bosh sahifa</a>
+    <a href="{% url 'about' %}">Haqida</a>
+    <a href="{% url 'cources' %}">Kurslar</a>
+    <a href="{% url 'team' %}">Jamoa</a>
+    <a href="{% url 'contact' %}">Aloqa</a>
+  </div>
+
+  <form>
+    <label>Ismingiz:</label>
+    <input type="text" placeholder="Ism kiriting">
+    <label>Email:</label>
+    <input type="email" placeholder="Email kiriting">
+    <label>Xabar:</label>
+    <textarea rows="4" placeholder="Savolingizni yozing..."></textarea>
+    <button type="submit">Yuborish</button>
+  </form>
+
+  <p style="margin-top:20px;color:#9aa4b2">📍 Toshkent, Chilonzor | 📞 +998 90 123 45 67 | ✉️ info@marsit.uz</p>
+</body>
+</html>
